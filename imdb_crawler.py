@@ -14,7 +14,7 @@ def find_movie(title, year, format = "json") :
 	request = urllib2.Request(url)
 	response = json.load(urllib2.urlopen(request))
 	data = json.dumps(response, indent = 2)
-	print json.dumps(response, indent = 2)
+	print data
 	return data
 
 
