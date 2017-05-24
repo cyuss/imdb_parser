@@ -2,10 +2,10 @@
 import urllib2
 import json
 
-"""
-	find a movie using imdb api with the title and the year
-"""
 def find_movie(title, year, format="json"):
+	"""
+	find a movie using imdb api with the title and the year
+	"""
 	# http://www.omdbapi.com/?t=legend&y=2015&plot=short&r=json
 	t = title.replace(" ", "+")
 	url = "http://www.omdbapi.com/?t="+t+"&y="+str(year)+"&plot=full&r="+format
